@@ -15,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <form>
-          <ReCAPTCHA size="normal" sitekey={keyRecaptcha} />
+          <ReCAPTCHA size="normal" sitekey={`<${keyRecaptcha}>`} />
         </form>
       </main>
 
