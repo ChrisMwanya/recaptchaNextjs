@@ -10,8 +10,8 @@ export default function Home() {
   <form onSubmit={handleSubmit}>
     <ReCAPTCHA
       ref={recaptchaRef}
-      size="invisible"
-      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+      size="normal"
+      sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SECRET}
       onChange={onReCAPTCHAChange}
     />
     <input
